@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Blog from "./containers/Blog/Blog";
+import classes from "./App.module.css";
+// import { StyleRoot } from "radium";
+
+function title(string) {
+  //return <span style="color:seagreen;">${string}</span>;
+  return string.raw[0].split('').join('_');
+}
 
 function App() {
   return (
-    <div className="App">
+    // <StyleRoot>
+    <div className={`container ${classes.App}`}>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="jumbotron jumbotron-fluid">
+          <div className="container">
+            <h1 className={`display-4 ${classes.title}`}>Lecture 5</h1>
+            <p className="lead">{title`ReactJs CSS`}</p>
+          </div>
+        </div>
       </header>
+      <section>
+        <Blog />
+      </section>
     </div>
+    // </StyleRoot>
   );
 }
 

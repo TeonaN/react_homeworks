@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+
+}
+
+.title {
+  color: red;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: yellowgreen;
+}
+
