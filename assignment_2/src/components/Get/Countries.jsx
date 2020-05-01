@@ -41,13 +41,3 @@ function Countries() {
 
 export default Countries;
 
-// // const content = CountryData.map((ob, i) => {       return (
-//     <DetailedCard
-//     key={ob.Date}
-//     confirmed={ob.Confirmed}
-//     deaths={ob.Deaths}
-//     recovered={ob.Recovered}
-//     active={ob.Active}
-//      date={ob.Date}
-//      day={i + 1}         />       );     });
-// // 10:22 PM

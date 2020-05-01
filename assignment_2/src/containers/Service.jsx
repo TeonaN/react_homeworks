@@ -6,13 +6,11 @@ import Select from "../components/Get/Select";
 function Service(props) {
   return (
     <div>
-      <All />
-      <Countries />
       <Select />
+      {/* <All />
+      <Countries /> */}
     </div>
   );
 }
 
 export default Service;
-
-
