@@ -24,8 +24,9 @@ function Countries() {
         <CountyCard
           key={ob.countryInfo._id}
           country={ob.country}
+          active={ob.active}
           recovered={ob.recovered}
-          flag={ob.countryInfo.flag}
+          critical={ob.critical}
         />
       );
     });
@@ -33,7 +34,7 @@ function Countries() {
 
   return (
     <div>
-      <button onClick={() => setButton(!button)}>ksd</button>
+      <button className="btn btn-danger" onClick={() => setButton(!button)}>Countries</button>
       {content}
     </div>
   );

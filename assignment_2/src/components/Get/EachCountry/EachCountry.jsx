@@ -21,7 +21,9 @@ function EachCounty({ countryId }) {
     <div>
       <EachCountyCard
         country={countryData.country}
+        active={countryData.active}
         recovered={countryData.recovered}
+        critical={countryData.critical}
       />
     </div>
   );

@@ -22,7 +22,7 @@ function JohnHopkins() {
       return (
         <Data
           country={ob.country}
-          recovered={ob.province}
+          province={ob.province}
           updatedAt={ob.updatedAt}
         />
       );
@@ -31,7 +31,7 @@ function JohnHopkins() {
 
   return (
     <div>
-      <button onClick={() => setButton(!button)}>ksd</button>
+      <button className="btn btn-danger" onClick={() => setButton(!button)  }>Country Data</button>
       {content}
     </div>
   );

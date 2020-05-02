@@ -7,12 +7,16 @@ import JohnHopkins from "../components/Get/JohnHopkins/JohnHopkins";
 
 function Service(props) {
   return (
-    <div>
-      <JohnHopkins />
-      {/* <Select />
+    <div className="row flex-column">
+            <All />
+      <div className="row center">
+    <JohnHopkins />
       <State />
-      <All />
-      <Countries /> */}
+      <Countries />
+     </div>
+
+      <Select />
+
     </div>
   );
 }
