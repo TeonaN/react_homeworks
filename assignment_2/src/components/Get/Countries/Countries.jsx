@@ -18,7 +18,7 @@ function Countries() {
   }, []);
 
   let content = null;
-  if (button) {
+  if (!button) {
     content = GlobalData.map((ob) => {
       return (
         <CountyCard
