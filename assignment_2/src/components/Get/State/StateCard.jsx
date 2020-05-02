@@ -11,4 +11,3 @@ function StateCard({ state, cases, todayCases }) {
 }
 
 export default StateCard;
-

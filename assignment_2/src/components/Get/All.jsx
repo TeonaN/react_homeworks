@@ -3,7 +3,6 @@ import axios from "axios";
 
 function All() {
   const [global, setGlobal] = useState([]);
-  const [button, setButton] = useState(true);
   useEffect(() => {
     axios
       .get("https://corona.lmao.ninja/v2/all")
@@ -15,21 +14,12 @@ function All() {
       });
   }, []);
 
-  // return (
-  //   <div>
-  //     <p> Today Cases: {global.todayCases} </p>
-  //     <p> Today Deaths: {global.todayDeaths} </p>
-  //     <p> Recovered: {global.recovered} </p>
-  //     <p> Active: {global.active} </p>
-  //     <p> Critical: {global.critical} </p>
-  //   </div>
-  // );
-
-
-
-
+  const style = {
+    fontWeight: "bold",
+  };
   return (
     <div className="row flex-column">
+      <h1 style={style}>Global Data</h1>
       <p> Today Cases: {global.todayCases} </p>
       <p> Today Deaths: {global.todayDeaths} </p>
       <p> Recovered: {global.recovered} </p>

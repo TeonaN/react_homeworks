@@ -9,7 +9,7 @@ function JohnHopkins() {
     axios
       .get("https://corona.lmao.ninja/v2/jhucsse")
       .then((response) => {
-        setData(response.data.slice(0, 15));
+        setData(response.data.slice(0, 10));
       })
       .catch((err) => {
         console.error("[JohnHopkins.jsx]", err.message);
@@ -31,11 +31,15 @@ function JohnHopkins() {
 
   return (
     <div>
-      <button className="btn btn-danger" onClick={() => setButton(!button)  }>Country Data</button>
+      <button
+        className="btn btn-danger mr-3"
+        onClick={() => setButton(!button)}
+      >
+        Country Data
+      </button>
       {content}
     </div>
   );
 }
 
 export default JohnHopkins;
-

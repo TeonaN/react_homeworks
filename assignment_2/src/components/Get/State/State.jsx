@@ -21,7 +21,6 @@ function State() {
     content = stateData.map((ob) => {
       return (
         <StateCard
-        //   key={ob.countryInfo._id}
           state={ob.state}
           cases={ob.cases}
           todayCases={ob.todayCases}
@@ -32,11 +31,12 @@ function State() {
 
   return (
     <div>
-      <button class="btn btn-outline-danger" onClick={() => setButton(!button)}>State Data</button>
+      <button class="btn btn-danger mr-3" onClick={() => setButton(!button)}>
+        State Data
+      </button>
       {content}
     </div>
   );
 }
 
 export default State;
-

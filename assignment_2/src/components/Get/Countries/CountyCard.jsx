@@ -1,6 +1,6 @@
 import React from "react";
 
-function CountyCard({  country, recovered,active,critical}) {
+function CountyCard({ country, recovered, active, critical }) {
   return (
     <div>
       <h3>{country}</h3>
@@ -12,4 +12,3 @@ function CountyCard({  country, recovered,active,critical}) {
 }
 
 export default CountyCard;
-

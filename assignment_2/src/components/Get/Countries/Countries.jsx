@@ -9,8 +9,7 @@ function Countries() {
     axios
       .get("https://corona.lmao.ninja/v2/countries?sort=country")
       .then((response) => {
-        setGlobalData(response.data.slice(0, 15));
-        console.log(response.data.slice(0, 15));
+        setGlobalData(response.data.slice(0, 10));
       })
       .catch((err) => {
         console.error("[Countries.jsx]", err.message);
@@ -34,11 +33,15 @@ function Countries() {
 
   return (
     <div>
-      <button className="btn btn-danger" onClick={() => setButton(!button)}>Countries</button>
+      <button
+        className="btn btn-danger mr-3"
+        onClick={() => setButton(!button)}
+      >
+        Countries
+      </button>
       {content}
     </div>
   );
 }
 
 export default Countries;
-

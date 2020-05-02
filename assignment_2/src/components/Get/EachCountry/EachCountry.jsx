@@ -10,7 +10,7 @@ function EachCounty({ countryId }) {
       .then((response) => {
         setCountryData(response.data);
 
-        console.log(response.data)
+        console.log(response.data);
       })
       .catch((err) => {
         console.error("[EachCountry.jsx]", err.message);
@@ -20,7 +20,6 @@ function EachCounty({ countryId }) {
   return (
     <div>
       <EachCountyCard
-        country={countryData.country}
         active={countryData.active}
         recovered={countryData.recovered}
         critical={countryData.critical}
